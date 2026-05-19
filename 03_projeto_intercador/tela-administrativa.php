@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +8,7 @@
 <body>
     <h1>tela administrativo</h1>
 
-   <a href="veiculos.php">veiculos</a>
+    <a href="veiculos.php">veiculos</a>
     
 </body>
 </html>
