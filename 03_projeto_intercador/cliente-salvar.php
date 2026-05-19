@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>cliente</title>
 </head>
 <body>
-    <h1>Login</h1>
-    <form action="veiculos.php" method="post">
-        <label>veiculos:</label>
+    <h1>cliente</h1>
+    <form action="cliente-cadastrar.php" method="post">
+        <label>cliente:</label>
         <input type="text" name="veiculos"><br>
         <label>clientes:</label>
         <input type="text" name="clientes"><br>
@@ -19,7 +19,15 @@
     <?php
     echo $_GET['mensagem'] ?? "";
     ?>
+    <a href="cliente-cadastrar.php">cliente-cadastrar</a>
 
-    <a href="cadastra_veiculos.php">cadastra_veiculos</a>
+    <?php
+        $arquivo = fopen("album_db.txt", "r");
+        while(!feof($arquivo)){
+                $linha = fgets($arquivo);
+                echo "$linha<br>";
+        }
+        fclose($arquivo);
+        ?>
 </body>
 </html>

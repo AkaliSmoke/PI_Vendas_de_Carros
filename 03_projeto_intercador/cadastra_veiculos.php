@@ -6,6 +6,4 @@ $Quilometragem = $_POST("quilometragem");
 $combustivel = $_POST("Combustivel");
 $Cor = $_POST("Cor");
 $Preço = $_POST("Preço");
-
-
 ?>
