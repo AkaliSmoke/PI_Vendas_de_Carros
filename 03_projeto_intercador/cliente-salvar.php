@@ -19,7 +19,15 @@
     <?php
     echo $_GET['mensagem'] ?? "";
     ?>
-
     <a href="cliente-cadastrar.php">cliente-cadastrar</a>
+
+    <?php
+        $arquivo = fopen("album_db.txt", "r");
+        while(!feof($arquivo)){
+                $linha = fgets($arquivo);
+                echo "$linha<br>";
+        }
+        fclose($arquivo);
+        ?>
 </body>
 </html>
