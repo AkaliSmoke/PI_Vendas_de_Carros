@@ -28,7 +28,10 @@
 
         <label>Cor:</label><br>
         <input type="text" name="cor"><br>
-
+       
+        <label for="foto">Foto:</label>
+        <input type="text" name="foto" id="foto">
+          
         <label>Preço:</label><br>
         <input type="number" name="preco"><br><br>
 
