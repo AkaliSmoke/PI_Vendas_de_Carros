@@ -9,31 +9,161 @@
 </head>
 <body>
    
-    <h1>Cadastrar</h1>
-    <form action="cadastrar.php" method="post">
-        <label>Marca:</label><br>
-        <input type="text" name="marca"><br>
+    <main class="container mt-5">
 
-        <label>Modelo:</label><br>
-        <input type="text" name="modelo"><br>
+    <div class="row justify-content-center">
 
-        <label>Ano:</label><br>
-        <input type="number" name="ano"><br>
+        <div class="col-md-8">
 
-        <label>Quilometragem:</label><br>
-        <input type="number" name="quilometragem"><br>
+            <div class="card shadow p-4 rounded">
 
-        <label>Combustível:</label><br>
-        <input type="text" name="combustivel"><br>
+                <h1 class="text-center mb-4">
+                    Cadastrar Veículo
+                </h1>
 
-        <label>Cor:</label><br>
-        <input type="text" name="cor"><br>
+                <form action="cadastrar.php" method="post">
 
-        <label>Preço:</label><br>
-        <input type="number" name="preco"><br><br>
+                    <div class="row">
 
-        <button type="submit">Cadastrar</button>
-    </form>
+                        <!-- Marca -->
+                        <div class="col-md-6 mb-3">
+
+                            <label class="form-label">
+                                Marca
+                            </label>
+
+                            <input 
+                                type="text" 
+                                name="marca"
+                                class="form-control"
+                                placeholder="Digite a marca"
+                            >
+
+                        </div>
+
+                        <!-- Modelo -->
+                        <div class="col-md-6 mb-3">
+
+                            <label class="form-label">
+                                Modelo
+                            </label>
+
+                            <input 
+                                type="text" 
+                                name="modelo"
+                                class="form-control"
+                                placeholder="Digite o modelo"
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Ano -->
+                        <div class="col-md-4 mb-3">
+
+                            <label class="form-label">
+                                Ano
+                            </label>
+
+                            <input 
+                                type="number" 
+                                name="ano"
+                                class="form-control"
+                            >
+
+                        </div>
+
+                        <!-- Quilometragem -->
+                        <div class="col-md-4 mb-3">
+
+                            <label class="form-label">
+                                Quilometragem
+                            </label>
+
+                            <input 
+                                type="number" 
+                                name="quilometragem"
+                                class="form-control"
+                            >
+
+                        </div>
+
+                        <!-- Preço -->
+                        <div class="col-md-4 mb-3">
+
+                            <label class="form-label">
+                                Preço
+                            </label>
+
+                            <input 
+                                type="number" 
+                                name="preco"
+                                class="form-control"
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <!-- Combustível -->
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Combustível
+                        </label>
+
+                        <select 
+                            name="combustivel"
+                            class="form-select"
+                        >
+
+                            <option>Gasolina</option>
+                            <option>Flex</option>
+                            <option>Diesel</option>
+                            <option>Elétrico</option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Cor -->
+                    <div class="mb-4">
+
+                        <label class="form-label">
+                            Cor
+                        </label>
+
+                        <input 
+                            type="text" 
+                            name="cor"
+                            class="form-control"
+                            placeholder="Digite a cor"
+                        >
+
+                    </div>
+
+                    <!-- Botão -->
+                    <button 
+                        type="submit"
+                        class="btn btn-primary w-100"
+                    >
+
+                        Cadastrar
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
 
     <br>
     <a href="form_veiculos.php">Ver Veículos</a>
