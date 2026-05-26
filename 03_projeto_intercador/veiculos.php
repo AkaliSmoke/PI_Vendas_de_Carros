@@ -20,17 +20,7 @@
                 <h1 class="text-center mb-4">
                     Cadastrar Veículo
                 </h1>
-
-
-        <label>Cor:</label><br>
-        <input type="text" name="cor"><br>
-       
-        <label for="foto">Foto:</label>
-        <input type="text" name="foto" id="foto">
-          
-        <label>Preço:</label><br>
-        <input type="number" name="preco"><br><br>
-
+                
                 <form action="cadastrar.php" method="post">
 
                     <div class="row">
