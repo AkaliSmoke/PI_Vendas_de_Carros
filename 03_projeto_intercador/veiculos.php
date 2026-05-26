@@ -20,12 +20,9 @@
                 <h1 class="text-center mb-4">
                     Cadastrar Veículo
                 </h1>
-                
                 <form action="cadastrar.php" method="post">
 
                     <div class="row">
-
-
                         <!-- Marca -->
                         <div class="col-md-6 mb-3">
 
@@ -39,7 +36,6 @@
                                 class="form-control"
                                 placeholder="Digite a marca"
                             >
-
                         </div>
 
                         <!-- Modelo -->
@@ -57,7 +53,6 @@
                             >
 
                         </div>
-
                     </div>
 
                     <div class="row">
