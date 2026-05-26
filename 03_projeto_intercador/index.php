@@ -13,7 +13,7 @@
 <body>
 
   <main>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2e2e2e;">
       <div class="container-fluid">
         <a class="navbar-brand">
           <img src="/img/img/logo.png" width="32" height="32" class="d-inline-block align-text-top">
