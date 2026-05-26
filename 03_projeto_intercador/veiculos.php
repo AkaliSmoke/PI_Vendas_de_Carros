@@ -21,7 +21,7 @@
                     Cadastrar Veículo
                 </h1>
 
-<<<<<<< HEAD
+
         <label>Cor:</label><br>
         <input type="text" name="cor"><br>
        
@@ -30,11 +30,11 @@
           
         <label>Preço:</label><br>
         <input type="number" name="preco"><br><br>
-=======
+
                 <form action="cadastrar.php" method="post">
 
                     <div class="row">
->>>>>>> 338b8132802efe19bcd574d72f05bf034f5a5807
+
 
                         <!-- Marca -->
                         <div class="col-md-6 mb-3">
@@ -178,5 +178,6 @@
 
     <br>
     <a href="form_veiculos.php">Ver Veículos</a>
+    
 </body>
 </html>
