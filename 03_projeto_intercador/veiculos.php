@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,167 +8,85 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <title>Cadastrar Veículo</title>
 </head>
+
 <body>
-   
+
     <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6"> <!-- Deixa o formulário centralizado e com tamanho ideal -->
+                <div class="card shadow p-4">
 
-    <div class="row justify-content-center">
+                    <h2 class="text-center mb-4">
+                        Cadastrar Veículo
+                    </h2>
 
-        <div class="col-md-8">
+                    <form>
 
-            <div class="card shadow p-4 rounded">
-
-                <h1 class="text-center mb-4">
-                    Cadastrar Veículo
-                </h1>
-                
-                <form action="cadastrar.php" method="post">
-
-                    <div class="row">
-
-
-                        <!-- Marca -->
-                        <div class="col-md-6 mb-3">
-
-                            <label class="form-label">
-                                Marca
-                            </label>
-
-                            <input 
-                                type="text" 
-                                name="marca"
-                                class="form-control"
-                                placeholder="Digite a marca"
-                            >
-
+                        <!-- 1. Marca -->
+                        <div class="mb-3">
+                            <label class="form-label">Marca</label>
+                            <input type="text" class="form-control" placeholder="Digite a marca">
                         </div>
 
-                        <!-- Modelo -->
-                        <div class="col-md-6 mb-3">
-
-                            <label class="form-label">
-                                Modelo
-                            </label>
-
-                            <input 
-                                type="text" 
-                                name="modelo"
-                                class="form-control"
-                                placeholder="Digite o modelo"
-                            >
-
+                        <!-- 2. Modelo -->
+                        <div class="mb-3">
+                            <label class="form-label">Modelo</label>
+                            <input type="text" class="form-control" placeholder="Digite o modelo">
                         </div>
 
-                    </div>
-
-                    <div class="row">
-
-                        <!-- Ano -->
-                        <div class="col-md-4 mb-3">
-
-                            <label class="form-label">
-                                Ano
-                            </label>
-
-                            <input 
-                                type="number" 
-                                name="ano"
-                                class="form-control"
-                            >
-
+                        <!-- 3. Ano -->
+                        <div class="mb-3">
+                            <label class="form-label">Ano</label>
+                            <input type="number" class="form-control" placeholder="Digite o ano">
                         </div>
 
-                        <!-- Quilometragem -->
-                        <div class="col-md-4 mb-3">
-
-                            <label class="form-label">
-                                Quilometragem
-                            </label>
-
-                            <input 
-                                type="number" 
-                                name="quilometragem"
-                                class="form-control"
-                            >
-
+                        <!-- 4. Quilometragem -->
+                        <div class="mb-3">
+                            <label class="form-label">Quilometragem</label>
+                            <input type="text" class="form-control" placeholder="Digite a quilometragem">
                         </div>
 
-                        <!-- Preço -->
-                        <div class="col-md-4 mb-3">
-
-                            <label class="form-label">
-                                Preço
-                            </label>
-
-                            <input 
-                                type="number" 
-                                name="preco"
-                                class="form-control"
-                            >
-
+                        <!-- 5. Preço -->
+                        <div class="mb-3">
+                            <label class="form-label">Preço</label>
+                            <input type="text" class="form-control" placeholder="Digite o preço">
                         </div>
 
-                    </div>
+                        <!-- 6. Combustível -->
+                        <div class="mb-3">
+                            <label class="form-label">Combustível</label>
+                            <select class="form-select">
+                                <option selected>Gasolina</option>
+                                <option>Etanol</option>
+                                <option>Flex</option>
+                                <option>Diesel</option>
+                                <option>Híbrido / Elétrico</option>
+                            </select>
+                        </div>
 
-                    <!-- Combustível -->
-                    <div class="mb-3">
+                        <!-- 7. Cor -->
+                        <div class="mb-4">
+                            <label class="form-label">Cor</label>
+                            <input type="text" class="form-control" placeholder="Digite a cor">
+                        </div>
 
-                        <label class="form-label">
-                            Combustível
-                        </label>
+                        <!-- Botão Cadastrar -->
+                        <button type="submit" class="btn btn-primary w-100">
+                            Cadastrar
+                        </button>
 
-                        <select 
-                            name="combustivel"
-                            class="form-select"
-                        >
+                    </form>
 
-                            <option>Gasolina</option>
-                            <option>Flex</option>
-                            <option>Diesel</option>
-                            <option>Elétrico</option>
-
-                        </select>
-
-                    </div>
-
-                    <!-- Cor -->
-                    <div class="mb-4">
-
-                        <label class="form-label">
-                            Cor
-                        </label>
-
-                        <input 
-                            type="text" 
-                            name="cor"
-                            class="form-control"
-                            placeholder="Digite a cor"
-                        >
-
-                    </div>
-
-                    <!-- Botão -->
-                    <button 
-                        type="submit"
-                        class="btn btn-primary w-100"
-                    >
-
-                        Cadastrar
-
-                    </button>
-
-                </form>
-
+                </div>
             </div>
-
         </div>
+    </main>
 
-    </div>
 
-</main>
 
     <br>
     <a href="form_veiculos.php">Ver Veículos</a>
-    
+
 </body>
+
 </html>
