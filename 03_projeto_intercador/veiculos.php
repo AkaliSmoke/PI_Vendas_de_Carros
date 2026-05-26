@@ -1,13 +1,19 @@
 <!DOCTYPE html>
+<<<<<<< Updated upstream
 <html lang="pt-br">
 
+=======
+<html lang="pt-BR">
+>>>>>>> Stashed changes
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Veículos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <title>Cadastrar Veículo</title>
+    <title>Cadastrar Veículos</title>
 </head>
+<<<<<<< Updated upstream
 
 <body>
 
@@ -135,4 +141,62 @@
 
 </body>
 
+=======
+<body>
+
+    <div class="card-container">
+        <h2>Cadastrar Veículos</h2>
+        
+        <form>
+            <div class="form-row">
+                <div class="form-group half-width">
+                    <label for="marca">Marca</label>
+                    <input type="text" id="marca" placeholder="Digite a marca">
+                </div>
+                <div class="form-group half-width">
+                    <label for="modelo">Modelo</label>
+                    <input type="text" id="modelo" placeholder="Digite o modelo">
+                </div>
+            </div>
+
+            <div class="form-row row-three-columns">
+                <div class="form-group">
+                    <label for="ano">Ano</label>
+                    <input type="text" id="ano">
+                </div>
+                <div class="form-group">
+                    <label for="quilometragem">Quilometragem</label>
+                    <input type="text" id="quilometragem">
+                </div>
+                 <div class="campo-formulario">
+                  <label for="foto">Foto:</label>
+                  <input type="text" name="foto" id="foto">
+                </div>
+                <div class="form-group">
+                    <label for="preco">Preço</label>
+                    <input type="text" id="preco">
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="combustivel">Combustível</label>
+                <select id="combustivel">
+                    <option value="gasolina">Gasolina</option>
+                    <option value="etanol">Etanol</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="flex">Flex</option>
+                </select>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="cor">Cor</label>
+                <input type="text" id="cor" placeholder="Digite a cor">
+            </div>
+
+            <button type="submit" class="btn-submit">Cadastrar</button>
+        </form>
+    </div>
+
+</body>
+>>>>>>> Stashed changes
 </html>
