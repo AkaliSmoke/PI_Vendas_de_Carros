@@ -1,5 +1,5 @@
 <?php
-$Marca = $_POST("Marca");
+$Marca = $_POST("marca");
 $Modelo = $_POST("Modelo");
 $Ano = $_POST("Ano");
 $Quilometragem = $_POST("quilometragem");
