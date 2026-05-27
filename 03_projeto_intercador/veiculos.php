@@ -48,8 +48,6 @@
                             <input type="text" name="quilometragem" id="quilometragem" class="form-control" placeholder="Digite a quilometragem">
                         </div>
 
-<<<<<<< Updated upstream
-
                         <!-- 5. Preço -->
                         <div class="mb-3">
                             <label for="preco" class="form-label">Preço</label>
@@ -57,9 +55,7 @@
                         </div>
 
                         <!-- 6. Combustível -->
-=======
-                           <!-- 7. Combustível -->
->>>>>>> Stashed changes
+
                         <div class="mb-3">
                             <label for="combustivel" class="form-label">Combustível</label>
                             <select name="combustivel" id="combustivel" class="form-select">
@@ -76,6 +72,7 @@
                            <label for="foto">Foto:</label>
                           <input type="text" name="foto" id="foto">
                         </div>
+                        
                         <!-- 6. Preço -->
                         <div class="mb-3">
                             <label for="preco" class="form-label">Preço</label>
