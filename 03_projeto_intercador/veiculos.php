@@ -9,14 +9,17 @@
 </head>
 <body class="d-flex flex-column min-vh-100 bg-light">
 
-    <!-- Conteúdo Principal do Formulário -->
-    <main class="container mt-5 flex-shrink-0">
-        <div class="row justify-content-center">
+  
+    <?php include "inc-menu.php" ?>
+
+    <main class="container mt-4 flex-shrink-0 p-2">
+        
+        <div class="row justify-content-center ">
             <div class="col-md-6 col-lg-5"> 
                 
                 <div class="card shadow p-4 rounded bg-white">
                     <h1 class="text-center mb-4 fs-3 fw-bold text-dark">
-                        Cadastrar Veículo
+                        Cadastrar Veículos
                     </h1>
                     
                     <form action="cadastrar.php" method="post">
@@ -46,13 +49,13 @@
                         </div>
 
 
-                        <!-- 6. Preço -->
+                        <!-- 5. Preço -->
                         <div class="mb-3">
                             <label for="preco" class="form-label">Preço</label>
                             <input type="text" name="preco" id="preco" class="form-control" placeholder="Digite o preço">
                         </div>
 
-                        <!-- 7. Combustível -->
+                        <!-- 6. Combustível -->
                         <div class="mb-3">
                             <label for="combustivel" class="form-label">Combustível</label>
                             <select name="combustivel" id="combustivel" class="form-select">
@@ -64,7 +67,7 @@
                             </select>
                         </div>
 
-                        <!-- 8. Cor -->
+                        <!-- 7. Cor -->
                         <div class="mb-4">
                             <label for="cor" class="form-label">Cor</label>
                             <input type="text" name="cor" id="cor" class="form-control" placeholder="Digite a cor">
@@ -81,12 +84,7 @@
         </div>
     </main>
 
-    <!-- Rodapé fora da tag main, fixado no final do layout usando Bootstrap -->
-    <footer class="footer mt-auto py-3 bg-dark text-white-50 border-top border-secondary">
-        <div class="container text-center">
-            <small>&copy; 2026 Sistema de Veículos Car. Todos os direitos reservados.</small>
-        </div>
-    </footer>
+    <?php include "inc-footer.php"?>
 
 </body>
 </html>
