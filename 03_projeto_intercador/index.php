@@ -18,41 +18,55 @@
 
     <div class="container text-center">
       <div class="row row-cols-4">
-        <div class="col">Column</div>
-        <div class="col">Column</div>
-        <div class="col">Column</div>
-        <div class="col">Column</div>
+        <div class="col">Column
+          <div class="card" style="width: 18rem;">
+         <img src="/img/img/dodge challeger 2015.jpg" class="card-img-top" alt="200">
+         <div class="card-body">
+         <h5 class="card-title">dodge</h5>
+         <p class="card-text">A Dodge foi fundada em 1914 pelos irmãos John e Horace Dodge. Inicialmente uma fabricante de peças e motores em Detroit, a marca destacou-se por sua alta qualidade mecânica. Conhecida por lançar veículos potentes, robustos e inovadores, ela se consolidou como um dos maiores ícones da engenharia automotiva americana.</p>
+         <a href="#" class="btn btn-primary">dodge challenger 2015</a>
+        </div>
       </div>
     </div>
 
 
+    <div class="col">Column
+        <div class="card" style="width: 18rem;">
+           <img src="/img/img/camaro.jpg" class="card-img-top" alt="200">
+           <div class="card-body">
+           <h5 class="card-title">chevrolet</h5>
+           <p class="card-text">A Chevrolet é uma das marcas de automóveis mais tradicionais do mundo, fundada em 3 de novembro de 1911 pelo piloto suíço Louis Chevrolet e pelo empresário norte-americano William C. Durant (fundador da General Motors). Desde 1918, a marca faz parte do conglomerado General Motors (GM).</p>
+           <a href="#" class="btn btn-primary">camaro zl1</a>
+         </div>
+           </div>
+    </div>
 
-   <div class="card" style="width: 18rem;">
-  <img src="/img/img/polo.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <div class="col">Column    
+    <div class="card" style="width: 18rem;">
+        <img src="/img/img/ford mustang gt.jpg" class="card-img-top" alt="200">
+      <div class="card-body">
+        <h5 class="card-title">Ford</h5>
+          <p class="card-text">A Ford Motor Company foi fundada em 1903 nos Estados Unidos por Henry Ford. Ela revolucionou a indústria global ao introduzir a linha de montagem e o fordismo, modelo de produção em massa que barateou os veículos e popularizou o automóvel, transformando o transporte e a economia mundial.</p>
+          <a href="#" class="btn btn-primary">ford mustang gt</a>
+      </div>
+   </div>
   </div>
-</div>
 
 
 
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2500">
-          <img src="/img/img/polo.jpg" class="d-block w-100" alt="...">
+    <div class="col">Column
+         <div class="card" style="width: 18rem;">
+         <img src="/img/img/bmw m3.jpg" class="card-img-top" alt="200">
+        <div class="card-body">
+              <h5 class="card-title">BMW</h5>
+             <p class="card-text">A BMW (Bayerische Motoren Werke, ou Fábrica de Motores da Baviera) nasceu em 1916 na Alemanha. Inicialmente focada na fabricação de motores de avião, a marca foi forçada a se reinventar após a Primeira Guerra Mundial e hoje é um dos maiores impérios mundiais de veículos de luxo e alto desempenho.</p>
+           <a href="#" class="btn btn-primary">bmw m3</a>
         </div>
-        <div class="carousel-item" data-bs-interval="2500">
-          <img src="/img/img/Corolla e Celica.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="2500">
-          <img src="/img/img/Fusca.jpg" class="d-block w-100" alt="...">
+    </div>
         </div>
       </div>
     </div>
-
   </main>
 
   <?php include "inc-footer.php"?>
