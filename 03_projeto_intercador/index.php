@@ -60,9 +60,10 @@
         </div>
       </div>
     </div>
-  </main>
 
+
+
+</main>
   <?php include "inc-footer.php"?>
-
 </body>
 </html>

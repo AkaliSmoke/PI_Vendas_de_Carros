@@ -8,10 +8,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Contato</a>
-                <a class="nav-link" href="#">Sobre</a>
-                <a class="nav-link" href="#">Sistema</a>
+                <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                <a class="nav-link" href="vendedor-cadastrar.php">Contato </a>
+                <a class="nav-link" href="historia-das-marca.php">Sobre</a>
+                <a class="nav-link" href="veiculos-cadastrar.php">Sistema</a>
             </div>
         </div>
     </div>
