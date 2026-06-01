@@ -21,5 +21,6 @@
     ?>
 
     <a href="cadastra_veiculos.php">cadastra_veiculos</a>
+    <a href="cadastra_cliente.php">cadastr_cliente</a>
 </body>
 </html>
