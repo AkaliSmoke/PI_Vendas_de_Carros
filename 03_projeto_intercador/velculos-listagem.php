@@ -17,7 +17,7 @@ include "inc-cabecalho.php";
             <table class="table table-success table-striped">   
                 <tr>
                 <th>ID</th>
-                <th>Artista</th>
+                <th></th>
                 <th>Nome do album</th>
                 <th>Ano do Lançamento</th>
                 <th>Tipo</th>
