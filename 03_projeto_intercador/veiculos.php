@@ -23,7 +23,7 @@
                         Cadastrar Veículos
                     </h1>
                     
-                    <form action="cadastrar.php" method="post">
+                    <form action="veiculos-salvar.php" method="post">
 
                         <!-- 1. Marca -->
                         <div class="mb-3">
@@ -83,7 +83,7 @@
 
                         <!-- Botão de Envio -->
                         <button type="submit" class="btn btn-primary w-100 py-3 fw-semibold">
-                            Cadastrar Veículo
+                            Cadastrar Veículos
                         </button>
 
                     </form>

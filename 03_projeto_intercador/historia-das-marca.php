@@ -15,33 +15,36 @@
 
     <main class="container mt-4 flex-shrink-0 p-2"> 
 
-    <div>
-         <h1 class="text-center mb-4 fs-3 fw-bold text-">
+    <div class="container text-center">
+  <div class="row align-items-center">
+    <div class="col">
+        <h1 class="text-center mb-4 fs-3 fw-bold text-">
           volkswagen
           <p>A história da Volkswagen no Brasil começou em 23 de março de 1953, iniciando como uma operação de montagem em um armazém no bairro do Ipiranga, em São Paulo. A inauguração oficial de sua primeira fábrica ocorreu em novembro de 1959, em São Bernardo do Campo (SP), consolidando o sucesso de modelos como o Fusca e a Kombi.</p>
         </h1>
     </div>
-
-    <div>
+    <div class="col">
         <h2 class="text-center mb-4 fs-3 fw-bold text-dark">
           Honda
           <p>A trajetória da Honda no Brasil começou em 1971, com a importação de motocicletas no bairro da Pompeia (SP). Em 1976, inaugurou o complexo de Manaus (AM) para produzir a icônica CG 125. Já a divisão de automóveis iniciou a produção local do Civic em 1997, em Sumaré (SP).</p>
         </h2>
     </div>
-
-     <div>
+    <div class="col">
         <h3 class="text-center mb-4 fs-3 fw-bold text-dark">
           Fiat 
           <p>A história da Fiat no Brasil começou oficialmente em 1973, com a escolha de Betim (MG) para abrigar sua fábrica, fugindo da concentração do ABC Paulista. A marca marcou o mercado nacional a partir de 1976 com o lançamento do Fiat 147, consolidando-se como líder de vendas e inovação.</p>
         </h3>
     </div>
-    <div>
+     <div class="col">
         <h4 class="text-center mb-4 fs-3 fw-bold text-dark">
           Toyota
           <p>A Toyota chegou ao Brasil em 1958, marcando a história ao instalar sua primeira operação fabril fora do Japão. A trajetória da marca no país é marcada pela robustez do jipe Bandeirante, a liderança histórica do Corolla e a expansão contínua com foco em novas tecnologias e sustentabilidade.</p>
         </h4>
     </div>
+  </div>
+</div>
 
+    
     </main>
    <?php include "inc-footer.php"?>
 </body>
