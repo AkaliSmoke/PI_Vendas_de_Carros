@@ -8,10 +8,12 @@
       </a>
 
       <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="#" class="nav-link px-2 link-light">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 link-light">Contato</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 link-light">Sobre</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 link-light">Sistema</a></li>
+        <li><a href="index.php" class="nav-link px-2 link-light">Home</a></li>
+        <li><a href="vendedor-cadastrar.php" class="nav-link px-2 link-light">Loja e Particular</a></li>
+        <li><a href="cliente-cadastrar.php" class="nav-link px-2 link-light">Pessoas</a></li>
+        <li><a href="historia-das-marca.php" class="nav-link px-2 link-light">Sobre</a></li>
+        <li><a href="veiculos-cadastrar.php" class="nav-link px-2 link-light">Cadastrar Veiculos</a></li>
+        <li><a href="velculos-listagem.php" class="nav-link px-2 link-light">Sistema</a></li>
       </ul>
 
     </div>

@@ -9,10 +9,10 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                <a class="nav-link" href="vendedor-cadastrar.php">loja e particular</a>
-                <a class="nav-link" href="cliente-cadastrar.php">pessoas</a>
+                <a class="nav-link" href="vendedor-cadastrar.php">Loja e Particular</a>
+                <a class="nav-link" href="cliente-cadastrar.php">Pessoas</a>
                 <a class="nav-link" href="historia-das-marca.php">Sobre</a>
-                <a class="nav-link" href="veiculos-cadastrar.php">cadastrar veiculos</a>
+                <a class="nav-link" href="veiculos-cadastrar.php">Cadastrar Veiculos</a>
                 <a class="nav-link" href="velculos-listagem.php">Lista Veiculos</a>
             </div>
         </div>
