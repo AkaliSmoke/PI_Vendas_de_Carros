@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
+ 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,74 +10,31 @@
   <link rel="stylesheet" href="style.css">
   <title>Página principal</title>
 </head>
-
+ 
 <body class="d-flex flex-column min-vh-100 bg-light">
-
+ 
   <main>
-
+ 
     <?php include "inc-menu.php" ?>
-
-
-    <div class="container text-center">
-      <div class="row row-cols-4">
-        <div class="col">Column
-          <div class="card" style="width: 18rem;">
-         <img src="/img/img/dodge challeger 2015.jpg" class="card-img-top" alt="200">
-         <div class="card-body">
-         <h5 class="card-title">dodge</h5>
-         <p class="card-text">A Dodge foi fundada em 1914 pelos irmãos John e Horace Dodge. Inicialmente uma fabricante de peças e motores em Detroit, a marca destacou-se por sua alta qualidade mecânica. Conhecida por lançar veículos potentes, robustos e inovadores, ela se consolidou como um dos maiores ícones da engenharia automotiva americana.</p>
-         <a href="#" class="btn btn-primary">dodge challenger 2015</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">Column
-        <div class="card" style="width: 18rem;">
-           <img src="/img/img/camaro.jpg" class="card-img-top" alt="200">
-           <div class="card-body">
-           <h5 class="card-title">chevrolet</h5>
-           <p class="card-text">A Chevrolet é uma das marcas de automóveis mais tradicionais do mundo, fundada em 3 de novembro de 1911 pelo piloto suíço Louis Chevrolet e pelo empresário norte-americano William C. Durant (fundador da General Motors). Desde 1918, a marca faz parte do conglomerado General Motors (GM).</p>
-           <a href="#" class="btn btn-primary">camaro zl1</a>
-         </div>
-           </div>
-    </div>
-  <div class="col">Column    
-    <div class="card" style="width: 18rem;">
-        <img src="/img/img/ford mustang gt.jpg" class="card-img-top" alt="200">
-      <div class="card-body">
-        <h5 class="card-title">Ford</h5>
-          <p class="card-text">A Ford Motor Company foi fundada em 1903 nos Estados Unidos por Henry Ford. Ela revolucionou a indústria global ao introduzir a linha de montagem e o fordismo, modelo de produção em massa que barateou os veículos e popularizou o automóvel, transformando o transporte e a economia mundial.</p>
-          <a href="#" class="btn btn-primary">ford mustang gt</a>
-      </div>
-   </div>
-    <div class="col">Column
-         <div class="card" style="width: 18rem;">
-         <img src="/img/img/bmw m3.jpg" class="card-img-top" alt="200">
-        <div class="card-body">
-              <h5 class="card-title">BMW</h5>
-             <p class="card-text">A BMW (Bayerische Motoren Werke, ou Fábrica de Motores da Baviera) nasceu em 1916 na Alemanha. Inicialmente focada na fabricação de motores de avião, a marca foi forçada a se reinventar após a Primeira Guerra Mundial e hoje é um dos maiores impérios mundiais de veículos de luxo e alto desempenho.</p>
-           <a href="#" class="btn btn-primary">bmw m3</a>
-        </div>
-    </div>
-        </div>
-
+ 
     <div class="container text-center pt-3 mb-1">
-
+ 
       <div class="row g-3">
-
+ 
         <div class="col-3">
-
+ 
           <div class="card h-100">
             <img src="/img/img/dodge challeger 2015.jpg" class="card-img-top" alt="Dodge">
             <!-- Adicionado d-flex flex-column -->
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Dodge</h5>
               <p class="card-text">A Dodge foi fundada em 1914 pelos irmãos John e Horace Dodge. Inicialmente uma fabricante de peças e motores em Detroit, a marca destacou-se por sua alta qualidade mecânica. Conhecida por lançar veículos potentes, robustos e inovadores, ela se consolidou como um dos maiores ícones da engenharia automotiva americana.</p>
-
+ 
               <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
             </div>
           </div>
         </div>
-
+ 
         <div class="col-3">
           <div class="card h-100">
             <img src="/img/img/ford mustang gt.jpg" class="card-img-top" alt="Ford">
@@ -88,7 +45,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="col-3">
           <div class="card h-100">
             <img src="/img/img/bmw m3.jpg" class="card-img-top" alt="BMW">
@@ -99,7 +56,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="col-3">
           <div class="card h-100">
             <img src="/img/img/camaro.jpg" class="card-img-top" alt="Chevrolet">
@@ -110,38 +67,30 @@
             </div>
           </div>
         </div>
-
-
+ 
       </div>
     </div>
-
-
-
-
-</main>
-  <?php include "inc-footer.php"?>
-</body>
-
+ 
+ 
     <div class="container text-center pt-3 mb-1">
       <div class="row">
         <div class="col-3">
-
+ 
         </div>
         <div class="col-3">
-
+ 
         </div>
         <div class="col-3">
-
+ 
         </div>
         <div class="col-3">
-
+ 
         </div>
       </div>
     </div>
-
+ 
   </main>
   <?php include "inc-footer.php" ?>
 </body>
-
-
+ 
 </html>
