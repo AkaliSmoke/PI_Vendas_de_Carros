@@ -18,7 +18,7 @@
             <div class="col-md-6 col-lg-5"> 
                 
                 <div class="card shadow p-4 rounded bg-white">
-                    <h1 class="text-center mb-4 fs-3 fw-bold text-dark">
+                    <h1 class="text-center mb-4 fs-3 text-dark">
                         Cadastrar Veículos
                     </h1>
                     
@@ -48,8 +48,6 @@
                             <input type="text" name="quilometragem" id="quilometragem" class="form-control" placeholder="Digite a quilometragem">
                         </div>
                         <!-- 6. Combustível -->
-
-                           <!-- 7. Combustível -->
 
                         <div class="mb-3">
                             <label for="combustivel" class="form-label">Combustível</label>
