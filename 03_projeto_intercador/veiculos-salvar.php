@@ -18,7 +18,6 @@ if(!$conexao){
 $sql = "insert into tb_carros(marca, modelo, ano, quilometragem, combustivel, foto, cor, preco) values ('$marca', '$modelo', '$ano', '$quilometragem', '$combustivel', '$cor', '$preco')";
  
 $resultado = mysqli_query($conexao, $sql);
- 
 if($resultado){
     echo "cadastrado com sucesso";
 }else{
