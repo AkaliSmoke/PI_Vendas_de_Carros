@@ -30,8 +30,8 @@
         <ul class="nav flex-column gap-2">
           <li><a href="veiculos-cadastrar.php" class="nav-link p-0 link-light opacity-75">Cadastrar Veículos</a></li>
           <li><a href="velculos-listagem.php" class="nav-link p-0 link-light opacity-75">Lista Veículos</a></li>
-          <li><a href="#" class="nav-link p-0 link-light opacity-75">Lista Cliente</a></li>
-          <li><a href="#" class="nav-link p-0 link-light opacity-75">Lista Vendedor</a></li>
+          <li><a href="clientes-listagem.php" class="nav-link p-0 link-light opacity-75">Lista Cliente</a></li>
+          <li><a href="vendedor-listagem.php" class="nav-link p-0 link-light opacity-75">Lista Vendedor</a></li>
         </ul>
       </div>
 

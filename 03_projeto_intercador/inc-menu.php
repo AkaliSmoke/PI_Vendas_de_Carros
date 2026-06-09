@@ -14,8 +14,8 @@
                 <a class="nav-link" href="historia-das-marca.php">Sobre</a>
                 <a class="nav-link" href="veiculos-cadastrar.php">Cadastrar Veiculos</a>
                 <a class="nav-link" href="velculos-listagem.php">Lista Veiculos</a>
-                <a class="nav-link" href="#">Lista Cliente</a>
-                <a class="nav-link" href="#">Lista Vendedor</a>
+                <a class="nav-link" href="clientes-listagem.php">Lista Cliente</a>
+                <a class="nav-link" href="vendedor-listagem.php">Lista Vendedor</a>
             </div>
         </div>
     </div>
