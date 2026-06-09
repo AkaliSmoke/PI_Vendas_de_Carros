@@ -15,42 +15,59 @@
 
     <main class="container mt-4 flex-shrink-0 p-2"> 
 
-   <div class="card" style="width: 18rem;">
-  <img src="\img\img\volkswagem.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title"></h5>
-    <p class="card-text">A Volkswagen do Brasil iniciou suas operações em março de 1953, montando Fuscas e Kombis em um armazém em São Paulo com peças importadas. Com o rápido sucesso, inaugurou a fábrica de São Bernardo do Campo (SP) em 1957 e, em novembro de 1959, iniciou oficialmente a produção nacional.</p>
-    <a href="#" class="btn btn-primary">Volkswagen</a>
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img src="\img\img\honda.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title"></h5>
-    <p class="card-text">A trajetória da Honda no Brasil começou em 1971, com a importação de motocicletas no bairro da Pompeia (SP). Em 1976, inaugurou o complexo de Manaus (AM) para produzir a icônica CG 125. Já a divisão de automóveis iniciou a produção local do Civic em 1997, em Sumaré </p>
-    <a href="#" class="btn btn-primary">Honda</a>
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img src="\img\img\fiat.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title"></h5>
-    <p class="card-text">>A história da Fiat no Brasil começou oficialmente em 1973, com a escolha de Betim (MG) para abrigar sua fábrica, fugindo da concentração do ABC Paulista. A marca marcou o mercado nacional a partir de 1976 com o lançamento do Fiat 147, consolidando-se como líder de vendas e inovação.</p>
-    <a href="#" class="btn btn-primary"> Fiat</a>
-  </div>
-</div>
-
-
-<div class="card" style="width: 18rem;">
-  <img src="\img\img\toyota.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title"></h5>
-    <p class="card-text">>A Toyota chegou ao Brasil em 1958, marcando a história ao instalar sua primeira operação fabril fora do Japão. A trajetória da marca no país é marcada pela robustez do jipe Bandeirante, a liderança histórica do Corolla e a expansão contínua com foco em novas tecnologias e sustentabilidade.</p>
-    <a href="#" class="btn btn-primary">Toyota</a>
-  </div>
-</div>
+    <div class="container text-center pt-3 mb-1">
+ 
+      <div class="row g-3">
+ 
+        <div class="col-3">
+ 
+          <div class="card h-100">
+            <img src="/img/img/volkwagem.jpg" class="card-img-top" alt="Dodge">
+            <!-- Adicionado d-flex flex-column -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">volkwagem</h5>
+              <p class="card-text">A história da Volkswagen no Brasil começou em 23 de março de 1953, em um galpão no bairro do Ipiranga (SP), inicialmente apenas montando o Fusca com peças importadas. A marca rapidamente se consolidou como uma das maiores forças da indústria automotiva nacional, revolucionando a cultura e a mobilidade no país.</p>
+ 
+              <a class="btn btn-primary mt-auto">volkwagem</a>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-3">
+          <div class="card h-100">
+            <img src="/img/img/honda.jpg" class="card-img-top" alt="Ford">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">honda</h5>
+              <p class="card-text">A trajetória da Honda no Brasil começou em outubro de 1971, em São Paulo, inicialmente apenas como importadora de motocicletas. Rapidamente, a marca transformou a mobilidade nacional, tornando-se sinônimo de expansão industrial, foco no consumidor e liderança absoluta no mercado de duas rodas.</p>
+              <a class="btn btn-primary mt-auto">honda</a>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-3">
+          <div class="card h-100">
+            <img src="/img/img/fiat.jpg" class="card-img-top" alt="BMW">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">fiat</h5>
+              <p class="card-text">A Fiat do Brasil iniciou suas operações em 1976 com a inauguração de sua fábrica em Betim, Minas Gerais. Quebrando a tradição das montadoras focadas no ABC Paulista, a marca consolidou-se como líder de mercado e pioneira na introdução de tecnologias como o primeiro carro do mundo movido a etanol (em 1979).</p>
+              <a  class="btn btn-primary mt-auto">fiat</a>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-3">
+          <div class="card h-100">
+            <img src="/img/img/toyota.jpg" class="card-img-top" alt="Chevrolet">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">toyota</h5>
+              <p class="card-text">A Toyota do Brasil iniciou suas operações em 1958, marcando um feito histórico: foi a primeira fábrica da montadora japonesa construída fora do Japão. A trajetória da marca no país é marcada pela evolução de utilitários rústicos para a produção local de sedãs e SUVs de alta confiabilidade.</p>
+              <a  class="btn btn-primary mt-auto">toyota</a>
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
     
     </main>
    <?php include "inc-footer.php"?>

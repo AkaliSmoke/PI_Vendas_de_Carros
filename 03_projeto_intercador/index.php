@@ -59,7 +59,7 @@
  
         <div class="col-3">
           <div class="card h-100">
-            <img src="/img/img/camaro.jpg" class="card-img-top" alt="Chevrolet">
+            <img src="/img/img/Chevroletcamarozl1.jpg" class="card-img-top" alt="Chevrolet">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Chevrolet</h5>
               <p class="card-text">A Chevrolet (General Motors) iniciou suas atividades no Brasil em janeiro de 1925, no bairro do Ipiranga, em São Paulo. Ao longo de mais de um século, a montadora consolidou-se como uma das maiores potências automotivas do país, destacando-se por veículos que se tornaram símbolos de diferentes épocas.</p>

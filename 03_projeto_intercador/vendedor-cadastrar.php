@@ -25,7 +25,7 @@
           </h1>
 
           <!-- Formulário configurado para enviar os dados via POST -->
-          <form action="processa-cadastro-cliente.php" method="POST">
+          <form action="vendedor-salvar.php" method="POST">
 
             <div class="row">
               <!-- Nome -->
