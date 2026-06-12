@@ -28,7 +28,7 @@ include "inc-cabecalho.php";
                 </tr>
                 <?php
                 #abrir conexão
-                include "./03_projeto_intercador/inc-conexao.php";
+                include("./03_projeto_intercador/inc-conexao.php");
 
                 #consultar os dados
                 $sql = "select * from tb_carros order by Marca, ano";
