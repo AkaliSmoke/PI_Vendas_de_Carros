@@ -1,11 +1,11 @@
 <?php
-$titulo_da_pagina = "velculos-listagem";
+$titulo_da_pagina = "veiculos-listagem";
 include "inc-cabecalho.php";
 ?>
 <body>
     <main class="container">
         <?php include "inc-menu.php"; ?>
-        <h1>velculos-listagem</h1>
+        <h1>veiculos-listagem</h1>
         <div class="row">
             <div class="col">
                 <a href="velculos-cadastrar.php">
@@ -28,10 +28,10 @@ include "inc-cabecalho.php";
                 </tr>
                 <?php
                 #abrir conexão
-                include "inc-conexao.php";
+                include("./03_projeto_intercador/inc-conexao.php");
 
                 #consultar os dados
-                $sql = "select * from tb_discografia order by artista , ano";
+                $sql = "select * from tb_carros order by Marca, ano";
                 $resultado = mysqli_query($conexao, $sql);
 
                 #lista os dados
@@ -40,7 +40,7 @@ include "inc-cabecalho.php";
                     echo "<td> {$linha_resultado['id']} </td>";
                     echo "<td> {$linha_resultado['Marca']} </td>";
 
-                    echo "<td> <a href='discografia-visualizar.php?id={$linha_resultado['id']}'> {$linha_resultado['nome']} </a> </td> ";
+                    echo "<td> <a href='veiculos-visualizar.php?id={$linha_resultado['id']}'> {$linha_resultado['nome']} </a> </td> ";
 
                     echo "<td> {$linha_resultado['modelo']} </td>";
                     echo "<td> {$linha_resultado['ano']} </td>";
@@ -53,11 +53,11 @@ include "inc-cabecalho.php";
                 }
                 #fechar conexão
                 mysqli_close($conexao)
-
              ?>
             </table>
          </div>   
         </div>
 
+        <?php include "inc-footer.php"; ?>
     </main>
-<?php include "inc-rodape.php"; ?>
+</body>
