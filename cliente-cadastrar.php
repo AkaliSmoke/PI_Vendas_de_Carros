@@ -61,6 +61,13 @@
               <input type="password" id="senha" name="senha" class="form-control" placeholder="Digite sua senha" required>
             </div>
 
+
+             <div class="mb-3">
+              <label for="senha" class="form-label text-secondary">foto</label>
+              <input type="link" id="foto" name="foto" class="form-control" placeholder="link da foto" required>
+            </div>
+
+
             <!-- Checkbox -->
             <div class="form-check mb-4">
               <input type="checkbox" class="form-check-input" id="termos" name="termos" value="aceito" required>
