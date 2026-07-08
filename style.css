@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(39, 39, 39);
+    text-align: center;
+}
+h1 {
+    font-family: 'Instrument Serif', serif;
+    color: rgb(10, 160, 10);
+}
+.capa-album{
+    width:100%;
+    max-width: 300px;
+    height: auto;
+}
+
+
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    color: #468bf1;            
+    font-size: 14px;          
+    font-weight: 500;          
+    display: block;            
+    margin-bottom: 1px;        
+    cursor: pointer;          
+}
+
+ 
+button {
+    width: 140px;          
+    height: 48px;          
+    border: none;
+    border-radius: 6px;    
+    font-size: 16px;
+    font-weight: 600;      
+    cursor: pointer;      
+    background-color: #fffdfd;
+    transition: background-color 0.2s;
+}
+ 
+input, select, textarea {
+    width: 100%;              
+    max-width: 400px;          
+    padding: 12px;            
+    box-sizing: border-box;    
+    border-radius: 10px;  
+}
+ 
+button:hover {
+    background-color: #00aa39;
+}
+ 
+.container-botoes {
+    display: flex;         /* Mantém os botões lado a lado */
+    justify-content: center; /* Centraliza a dupla de botões */
+    gap: 50px;             /* Cria espaço entre o botão Salvar e Limpar */
+    margin-top: 32px;      /* Aumente esse valor se quiser desgrudar ainda mais! */
+    width: 100%;          
+}
+
+.letra-cor{
+    color: #fdfdfd;
+}
+
+.cartao{
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.2 ease-in;
+}
+
+.cartao:hover{
+    transform: translateX(5px) translateY(-5px);
+}
+
+.cor-cartao{
+   background-color: rgba(0, 0, 0, 0.493);
+   height: 350px;
+   color: white;
+   border-radius: 8px;
+   display: flex;
+   align-items: end;
+}
