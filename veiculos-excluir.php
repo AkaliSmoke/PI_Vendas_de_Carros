@@ -1,13 +1,13 @@
 <?php
-$id = $_GET['id'];
+$id_carro = $_GET['id_carro'];
 
 include "inc-conexao.php";
 
-$sql = "delete from tb_discografia where id = ($id)";
+$sql = "delete from tb_carro where id_carro = {$id_carro}";
 
 $resultado = mysqli_query($conexao, $sql);
 
 mysqli_close($conexao);
 
-header('location:discografia-listagem.php');
+header('Location:veiculos-listagem.php');
 ?>

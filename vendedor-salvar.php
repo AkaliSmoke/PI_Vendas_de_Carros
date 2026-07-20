@@ -1,28 +1,33 @@
 <?php
-$artista = $_POST['artista'];
+
 $nome = $_POST['nome'];
-$ano = $_POST['ano'];
-$tipo = $_POST['tipo'];
-$foto = $_POST['foto'];
- 
-$conexao = mysqli_connect("localhost", "root", "", "db_spotify");
-if(!$conexao){
+$cpf = $_POST['cpf'];
+$email = $_POST['email'];
+$telefone = $_POST['telefone'];
+$senha = $_POST['senha'];
+$nome_da_loja = $_POST['nome_da_loja'];
+$endereco = $_POST['endereco'];
+
+$conexao = mysqli_connect("localhost", "root", "", "db_carros_projeto_integrador");
+
+if (!$conexao) {
     echo "erro";
     die("<h3>Erro</h3> " . mysqli_connect_error());
 }
- 
- 
-$sql = "insert into tb_discografia(artista, nome, ano, tipo, foto) values ('$artista', '$album', '$ano', '$tipo', '$foto')";
- 
+
+$sql = "INSERT INTO tb_vendedor(nome, cpf, email, telefone, senha, nome_da_loja, endereco)
+VALUES ('$nome', '$cpf', '$email', '$telefone', '$senha', '$nome_da_loja', '$endereco')";
+
 $resultado = mysqli_query($conexao, $sql);
- 
-if($resultado){
-    echo "cadastrado com sucesso";
-}else{
-    echo "deu algum problema";
+
+if ($resultado) {
+    echo "Cadastrado com sucesso";
+} else {
+    echo "Deu algum problema";
 }
- 
+
 mysqli_close($conexao);
-header('location:discografia-listagem.php');
+
+header("location:vendedor-listagem.php");
 
 ?>

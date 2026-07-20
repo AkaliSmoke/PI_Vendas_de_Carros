@@ -1,33 +1,31 @@
 <?php
-$id = $_GET['id_cliente'];
+$id_vendedor = $_GET['id_vendedor'];
 
 include "inc-conexao.php";
 
-$sql = "select * from tb_cliente where id_cliente = {$id}";
+$sql = "select * from tb_vendedor where id_vendedor = {$id_vendedor}";
 $resultado = mysqli_query($conexao, $sql);
 
-$nome = $cpf = $email = $telefone = $foto = "";
+$nome = $cpf = $email = $telefone = $senha = "";
 
 while($linha = mysqli_fetch_assoc($resultado)){
     $nome = $linha['nome'];
     $cpf = $linha['cpf'];
     $email = $linha['email'];
     $telefone = $linha['telefone'];
-    $foto = $linha['foto'];
+    $senha = $linha['senha'];
 }
 
 include "inc-cabecalho.php";
 ?>
 
 <body>
-
     <?php include "inc-menu.php"; ?>
 
     <main class="container">
+        <h1>Editar Vendedor: <?= $nome ?></h1>
 
-        <h1>Editar Cliente: <?= $nome ?></h1>
-
-        <form method="post" action="cliente-atualizar.php?id=<?= $id ?>">
+        <form method="post" action="vendedor-atualizar.php?id_vendedor=<?= $id_vendedor ?>">
 
             Nome:
             <input name="nome" value="<?= $nome ?>"> <br>
@@ -35,19 +33,18 @@ include "inc-cabecalho.php";
             CPF:
             <input name="cpf" value="<?= $cpf ?>"> <br>
 
-            E-mail:
-            <input name="email" value="<?= $email ?>"> <br>
-
             Telefone:
             <input name="telefone" value="<?= $telefone ?>"> <br>
 
-            Foto:
-            <input name="foto" value="<?= $foto ?>"> <br>
+            E-mail:
+            <input name="email" value="<?= $email ?>"> <br>
 
-            <button type="submit">Atualizar Cliente</button>
+            Senha:
+            <input type="password" name="senha" value="<?= $senha ?>"> <br>
+
+            <button type="submit">Atualizar vendedor</button>
 
         </form>
-
     </main>
 
 <?php
@@ -56,4 +53,3 @@ include "inc-rodape.php";
 ?>
 
 </body>
-</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <main class="container">
+        <form method="post" action="carrinho.php" id="veiculos-formulario">
+            <button type="submit" class="btn btn-success mb-4 mt-3 ms-auto">
+                <i class='bi bi-cart'> <span class="badge text-bg-primary" id="numero_de_produtos">0</span></i>
+            </button>
+            <input type="text" name="veiculos" id="veiculos">
+        </form>

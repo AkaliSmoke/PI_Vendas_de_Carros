@@ -1,28 +1,33 @@
 <?php
-$artista = $_POST['artista'];
-$nome = $_POST['nome'];
+
+$marca = $_POST['marca'];
+$modelo = $_POST['modelo'];
 $ano = $_POST['ano'];
-$tipo = $_POST['tipo'];
+$quilometragem = $_POST['quilometragem'];
+$combustivel = $_POST['combustivel'];
 $foto = $_POST['foto'];
- 
-$conexao = mysqli_connect("localhost", "root", "", "db_spotify");
+$cor = $_POST['cor'];
+$preco = $_POST['preco'];
+
+$conexao = mysqli_connect("localhost", "root", "", "db_carros_projeto_integrador");
+
 if(!$conexao){
-    echo "erro";
-    die("<h3>Erro</h3> " . mysqli_connect_error());
+    die("Erro: " . mysqli_connect_error());
 }
- 
- 
-$sql = "insert into tb_discografia(artista, nome, ano, tipo, foto) values ('$artista', '$album', '$ano', '$tipo', '$foto')";
- 
+
+$sql = "INSERT INTO tb_carro
+(marca, modelo, ano, quilometragem, combustivel, foto, cor, preco)
+VALUES
+('$marca', '$modelo', '$ano', '$quilometragem', '$combustivel', '$foto', '$cor', '$preco')";
+
 $resultado = mysqli_query($conexao, $sql);
- 
+
 if($resultado){
-    echo "cadastrado com sucesso";
+    mysqli_close($conexao);
+    header("Location: veiculos-listagem.php");
+    exit;
 }else{
-    echo "deu algum problema";
+    echo "Erro: " . mysqli_error($conexao);
 }
- 
-mysqli_close($conexao);
-header('location:discografia-listagem.php');
 
 ?>

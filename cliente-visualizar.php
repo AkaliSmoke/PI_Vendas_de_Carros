@@ -1,35 +1,46 @@
 <?php
-$titulo_da_pagina = "Visualizar Discografia";
+$titulo_da_pagina = "Visualizar Cliente";
 include "inc-cabecalho.php";
 include "inc-conexao.php";
 
 $id = $_GET['id'];
- 
-$sql = "select * from tb_discografia where id = $id";
+
+$sql = "select * from tb_cliente where id_cliente = $id";
 $resultado = mysqli_query($conexao, $sql);
- 
-$foto = $artista = $album = $ano = $tipo = "";
+
+$foto = $nome = $cpf = $email = $telefone = "";
+
 while($linha = mysqli_fetch_assoc($resultado)){
-    $artista = $linha['artista'];
-    $album = $linha['nome'];
+    $nome = $linha['nome'];
+    $cpf = $linha['cpf'];
+    $email = $linha['email'];
+    $telefone = $linha['telefone'];
     $foto = $linha['foto'];
-    $ano = $linha['ano'];
-    $tipo = $linha['tipo'];
 }
 ?>
+
 <body>
-    <?php include "inc-menu.php";?>
+
+    <?php include "inc-menu.php"; ?>
+
     <main class="container mt-5">
-        <h1>Visualizar Discografia </h1>
-    <div class= "letra-cor">
-       <img src="<?=$foto; ?>" alt="<?=$album; ?>" class= "capa-album" > <br>
-        Artista:    <?=$artista; ?> <br>
-        Nome do álbum:   <?=$album; ?> <br>
-        Ano de lançamento: <?=$ano; ?>    <br>
-        Tipo:   <?=$tipo; ?> <br>
-    </div>
+
+        <h1>Visualizar Cliente</h1>
+
+        <div class="letra-cor">
+
+            <img src="<?= $foto; ?>" alt="<?= $nome; ?>" class="capa-album"> <br>
+
+            Nome: <?= $nome; ?> <br>
+            CPF: <?= $cpf; ?> <br>
+            E-mail: <?= $email; ?> <br>
+            Telefone: <?= $telefone; ?> <br>
+
+        </div>
+
     </main>
- 
-    <?php include "inc-rodape.php"?>
+
+    <?php include "inc-rodape.php"; ?>
+
 </body>
- 
+</html>

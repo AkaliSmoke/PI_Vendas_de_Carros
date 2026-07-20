@@ -1,41 +1,78 @@
 <?php
-$id = $_GET['id'];
+$id_carro = $_GET['id_carro'];
+
 include "inc-conexao.php";
-$sql = "select * from tb_discografia where id = {$id}";
+
+$sql = "select * from tb_carro where id_carro = {$id_carro}";
 $resultado = mysqli_query($conexao, $sql);
-$nome = $artista = $foto = $tipo = $ano = "";
+
+$marca = $modelo = $ano = $quilometragem = $foto = $cor = $preco = $combustivel = "";
+
 while($linha = mysqli_fetch_assoc($resultado)){
-    $nome = $linha['nome'];
-    $artista = $linha ['artista'];
-    $foto = $linha ['foto'];
-    $tipo = $linha ['tipo'];
-    $ano = $linha ['ano'];
+    $marca = $linha['marca'];
+    $modelo = $linha['modelo'];
+    $ano = $linha['ano'];
+    $quilometragem = $linha['quilometragem'];
+    $foto = $linha['foto'];
+    $cor = $linha['cor'];
+    $preco = $linha['preco'];
+    $combustivel = $linha['combustivel'];
 }
 
 include "inc-cabecalho.php";
 ?>
+
 <body>
+
     <?php include "inc-menu.php"; ?>
+
     <main class="container">
-        <h1>Editar Disco: <?= $nome?></h1>
-        <form method="post" action="discografia-atualizar.php?id=<?= $id ?>">
-            Artista: <input name="artista" value="<?= $artista?>"> <br>
-            Nome do álbum: <input name="nome" value="<?= $nome ?>"> <br>
-            Ano: <input type="number" name="ano" value="<?= $ano ?>"> <br>
-            Foto: <input name="foto" value="<?= $foto ?>"> <br>
-            Tipo:
-            <select name="tipo">
+
+        <h1>Editar Veículo: <?= $marca ?></h1>
+
+        <form method="post" action="veiculo-atualizar.php?id_carro=<?= $id_carro ?>">
+
+            Marca:
+            <input name="marca" value="<?= $marca ?>"> <br>
+
+            Modelo:
+            <input name="modelo" value="<?= $modelo ?>"> <br>
+
+            Ano:
+            <input type="number" name="ano" value="<?= $ano ?>"> <br>
+
+            Quilometragem:
+            <input type="number" name="quilometragem" value="<?= $quilometragem ?>"> <br>
+
+            Foto:
+            <input name="foto" value="<?= $foto ?>"> <br>
+
+            Cor:
+            <input name="cor" value="<?= $cor ?>"> <br>
+
+            Preço:
+            <input type="number" step="10.2" name="preco" value="<?= $preco ?>"> <br>
+
+            Combustível:
+            <select name="combustivel">
                 <option value=""></option>
-                <option value="álbum" <?php if($tipo == 'album'){ echo "selected";} ?>>Álbum</option>
-                <option value="single"<?php if($tipo == 'single'){ echo "selected";} ?>>Single</option>
-                <option value="EP" <?php if($tipo == 'EP'){ echo "selected";} ?>>EP</option>
-            </select><br>
-            <button type="submit">Atualizar disco</button>
+                <option value="Gasolina" <?= $combustivel == "Gasolina" ? "selected" : "" ?>>Gasolina</option>
+                <option value="Etanol" <?= $combustivel == "Etanol" ? "selected" : "" ?>>Etanol</option>
+                <option value="Flex" <?= $combustivel == "Flex" ? "selected" : "" ?>>Flex</option>
+                <option value="Diesel" <?= $combustivel == "Diesel" ? "selected" : "" ?>>Diesel</option>
+                <option value="Elétrico" <?= $combustivel == "Elétrico" ? "selected" : "" ?>>Elétrico</option>
+                <option value="Híbrido" <?= $combustivel == "Híbrido" ? "selected" : "" ?>>Híbrido</option>
+            </select> <br>
+
+            <button type="submit">Atualizar veículo</button>
+
         </form>
+
     </main>
+
 <?php
 mysqli_close($conexao);
 include "inc-rodape.php";
 ?>
+
 </body>
- 

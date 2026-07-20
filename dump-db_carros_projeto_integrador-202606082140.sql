@@ -16,13 +16,13 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `tb_carros`
+-- Table structure for table `tb_carro`
 --
 
-DROP TABLE IF EXISTS `tb_carros`;
+DROP TABLE IF EXISTS `tb_carro`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `tb_carros` (
+CREATE TABLE `tb_carro` (
   `id_carro` int(11) NOT NULL AUTO_INCREMENT,
   `placa` varchar(10) NOT NULL,
   `modelo` varchar(100) NOT NULL,
@@ -30,18 +30,20 @@ CREATE TABLE `tb_carros` (
   `ano` int(11) NOT NULL,
   `cor` varchar(30) NOT NULL,
   `quilometragem` decimal(10,0) NOT NULL,
+  `combustivel` varchar(30) NOT NULL,
   `foto` varchar(1000) NOT NULL,
+  `preco` decimal(12,2) NOT NULL,
   PRIMARY KEY (`id_carro`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `tb_carros`
+-- Dumping data for table `tb_carro`
 --
 
-LOCK TABLES `tb_carros` WRITE;
-/*!40000 ALTER TABLE `tb_carros` DISABLE KEYS */;
-/*!40000 ALTER TABLE `tb_carros` ENABLE KEYS */;
+LOCK TABLES `tb_carro` WRITE;
+/*!40000 ALTER TABLE `tb_carro` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tb_carro` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --

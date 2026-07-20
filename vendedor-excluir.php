@@ -1,13 +1,13 @@
 <?php
-$id = $_GET['id'];
+$id_vendedor = $_GET['id_vendedor'];
 
 include "inc-conexao.php";
 
-$sql = "delete from tb_discografia where id = ($id)";
+$sql = "delete from tb_vendedor where id_vendedor = ($id_vendedor)";
 
 $resultado = mysqli_query($conexao, $sql);
 
 mysqli_close($conexao);
 
-header('location:discografia-listagem.php');
+header('location:vendedor-listagem.php');
 ?>

@@ -1,27 +1,18 @@
 <?php
-$artista = $_POST['artista'];
 $nome = $_POST['nome'];
-$ano = $_POST['ano'];
-$tipo = $_POST['tipo'];
+$cpf = $_POST['cpf'];
+$email = $_POST['email'];
+$telefone = $_POST['telefone'];
 $foto = $_POST['foto'];
- 
-$conexao = mysqli_connect("localhost", "root", "", "db_spotify");
-if(!$conexao){
-    echo "erro";
-    die("<h3>Erro</h3> " . mysqli_connect_error());
-}
 
-$sql = "insert into tb_discografia(artista, nome, ano, tipo, foto) values ('$artista', '$album', '$ano', '$tipo', '$foto')";
- 
+include "inc-conexao.php";
+
+$sql = "insert into tb_cliente(nome, cpf, email, telefone, foto)
+values ('$nome', '$cpf', '$email', '$telefone', '$foto')";
+
 $resultado = mysqli_query($conexao, $sql);
- 
-if($resultado){
-    echo "cadastrado com sucesso";
-}else{
-    echo "deu algum problema";
-}
- 
-mysqli_close($conexao);
-header('location:discografia-listagem.php');
 
+mysqli_close($conexao);
+
+header('location:cliente-listagem.php');
 ?>
